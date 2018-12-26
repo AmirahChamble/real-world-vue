@@ -22,25 +22,17 @@ export default{
 
 <style lang="scss">
 
-@import './src/styles/variables'; 
+@import './src/styles/variables';
+*{
+  margin: 0px;
+} 
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  color:$color-black;
 }
 
-#nav a {
-  font-weight: bold;
-  color: $color-black;
-}
-
-#nav a.router-link-exact-active {
-  color: $color-pink;
-}
 </style>

@@ -2,20 +2,21 @@
     
      <div id="nav">
     <router-link 
+        id="brand-name"
         to="/" 
-      > Real Worl Events</router-link> |
+      > KikBak</router-link> 
     <nav>
-      <router-link 
+      <!--router-link 
         :to="{ name: 'event-list'}" 
-      > List </router-link> |
+      > List </router-link--> 
 
       <router-link 
         :to="{ name: 'event-create'}" 
-      > Create Event </router-link> |
+      > Create Event </router-link> 
 
       <router-link 
         :to="{ name: 'user', params: {username: 'Amirah'} }" 
-      > Amirah </router-link> 
+      > Your Events </router-link> 
     </nav>
     </div>
 
