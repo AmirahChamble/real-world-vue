@@ -1,11 +1,22 @@
 <template>
     <div>
-        <h4>Park Cleanup</h4>
+        <h4> {{ title }} </h4>
     </div>
 </template>
 
 <script>
+    export default{
+        data(){
+            return{
+                title: 'Park Cleanup'
+            }
+        }
+    };
 </script>
 
-<style>
+<style scoped>
+
+h4{
+    color: orange;
+}
 </style>
