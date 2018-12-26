@@ -27,6 +27,8 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang ="scss">
+ @import './src/styles/variables';
+ @import './src/styles/components/navbar';
 
 </style>

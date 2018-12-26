@@ -20,7 +20,10 @@ export default{
 
 </script>
 
-<style>
+<style lang="scss">
+
+@import './src/styles/variables'; 
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,10 +37,10 @@ export default{
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: $color-black;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: $color-pink;
 }
 </style>
