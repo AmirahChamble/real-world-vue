@@ -4,7 +4,7 @@
     <router-link 
         id="brand-name"
         to="/" 
-      > KikBak</router-link> 
+      > CickBac</router-link> 
     <nav>
       <!--router-link 
         :to="{ name: 'event-list'}" 
