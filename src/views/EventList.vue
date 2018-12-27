@@ -17,9 +17,9 @@
 
     h1{
         color: $color-pink;
-        margin-bottom: 24px;
-        font-size: 3em;
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        margin: 50px 0px;
+        font-size: 4rem;
+        text-shadow: 2px 2px 2px $color-blue;//rgba(0, 0, 0, 0.3);
     }
 
     div{

@@ -23,6 +23,9 @@ export default{
 <style lang="scss">
 
 @import './src/styles/variables';
+@import './src/styles/components/navbar';
+@import './src/styles/components/eventcard';
+
 *{
   margin: 0px;
   
