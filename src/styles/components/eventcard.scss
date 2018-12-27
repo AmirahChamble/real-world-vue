@@ -1,0 +1,44 @@
+#eventWrapper{
+    background: $color-white;
+    text-decoration: none;
+    width: 60%;
+    padding: 50px 24px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    margin: 24px 12px;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #attendees{
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 1.2em;
+            color: $color-black;
+        }
+        h4{
+            margin: 12px 0px;
+            font-size: 1.3em;
+            color: $color-black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:center;
+
+            .title{
+                color: $color-pink;
+            }
+            span{
+                margin: 0px 4px;
+            }
+            .location{
+                color: $color-blue;
+            }
+        }
+    }
+}

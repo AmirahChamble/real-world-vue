@@ -1,5 +1,5 @@
 # real-world-vue
-
+Assuming you have yarn, npm, and vue cli installed; below are basic instructions to get your environment up and running.
 ## Project setup
 ```
 yarn install
