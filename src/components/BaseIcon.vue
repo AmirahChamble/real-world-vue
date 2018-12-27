@@ -1,8 +1,11 @@
 <template>
-    <div class="icon-wrapper">
+    <div id="icon-wrapper">
         <svg class="icon" :width= "width" :height= "height" >
             <use v-bind= "{'xlink:href':'/feather-sprite.svg#' + name}" />
         </svg>
+        <p>
+            <slot></slot>
+        </p>
         
     </div>
 </template>
@@ -24,13 +27,18 @@
 </script>
 
 <style scoped lang="scss">
-.icon-wrapper {
-      display: inline-flex;
-      align-items: center;
-      color: rgba(0, 0, 0, 0.4);
-      font-size: 1rem;
-      font-weight: 600;
-    }
+@import './src/styles/variables';
+
+#icon-wrapper {
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    font-weight: 600;
+    
     .icon {
       stroke: currentColor;
       stroke-width: 2;
@@ -40,4 +48,10 @@
       margin-right: 12px;
     }
 
+    p{
+        color: $color-black;
+        font-style: italic;
+        font-weight: 400;
+    }
+}
 </style>

@@ -12,8 +12,7 @@
             </h4>
 
             <span id="attendeeWrapper">
-                <BaseIcon name="users" />
-                <p id="attendees"> {{ event.attendees.length }} people are going </p>
+                <BaseIcon name="users">{{ event.attendees.length }} people are going</BaseIcon>
             </span>
         </div>
     </router-link>
@@ -42,19 +41,13 @@
 </script>
 
 <style scoped lang="scss">
-    @import './src/styles/variables';
-    @import './src/styles/components/eventcard';
+    
 
     #attendeeWrapper{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        svg{
-            fill: $color-black;
-        }
-
     }
 
 
