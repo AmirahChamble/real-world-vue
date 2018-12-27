@@ -1,11 +1,16 @@
 <template>
     <router-link 
-            :to="{ name: 'event-show', params: {id : '1'} }"
+        id="eventWrapper"
+        :to="{ name: 'event-show', params: {id : '1'} }"
     >  
         <div>
-            <span>@ {{ event.time }} on {{ event.date }} </span>
-            <h4> {{ event.title }} @ {{ event.location }}</h4>
-            <span> {{ event.attendees.length }} people are going </span>
+            <p>{{ event.date }} @ {{ event.time }} </p>
+            <h4>
+                <span class="title"> {{ event.title }} </span> 
+                @ 
+                <span class="location"> {{ event.location }} </span>
+            </h4>
+            <p id="attendees"> {{ event.attendees.length }} people are going </p>
         </div>
     </router-link>
 </template>
@@ -17,9 +22,9 @@
                 event: {
                     id: 1,
                     title: 'Beach Cleanup',
-                    date: ' Tues Aug 19, 2018',
+                    date: ' Tuesday Jan 2nd, 2019',
                     location: ' The National Harbor',
-                    time: '6:00',
+                    time: '6:00pm',
                     attendees: [
                         {id:'abc123', name:'Amirah Chamble'},
                         {id:'abc124', name:'Kelly Green'},
@@ -32,9 +37,9 @@
     };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    @import './src/styles/variables';
+    @import './src/styles/components/eventcard';
 
-h4{
-    color: orange;
-}
+
 </style>

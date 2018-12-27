@@ -25,6 +25,7 @@ export default{
 @import './src/styles/variables';
 *{
   margin: 0px;
+  
 } 
 
 #app {
