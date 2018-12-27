@@ -4,7 +4,7 @@
     <router-link 
         id="brand-name"
         to="/" 
-      > CickBac</router-link> 
+      > Real World Vue</router-link> 
     <nav>
       <!--router-link 
         :to="{ name: 'event-list'}" 
