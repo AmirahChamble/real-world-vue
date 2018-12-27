@@ -1,32 +1,39 @@
+/* eslint-disable */
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'event-list'}" > List </router-link> |
-      <router-link :to="{ name: 'event-show' }" > Show Event # 1 </router-link> |
-      <router-link :to="{ name: 'event-create'}" > Create Event </router-link> 
-    </div>
+
+    <NavBar/>
+
     <router-view />
+
   </div>
 </template>
 
-<style>
+<script>
+import NavBar from "@/components/NavBar.vue"
+
+export default{
+  components:{
+    NavBar
+  }
+}
+
+</script>
+
+<style lang="scss">
+
+@import './src/styles/variables';
+*{
+  margin: 0px;
+  
+} 
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  color:$color-black;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
