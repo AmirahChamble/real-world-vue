@@ -1,7 +1,7 @@
 <template>
     <router-link 
         id="eventWrapper"
-        :to="{ name: 'event-show', params: {id : '1'} }"
+        :to="{ name: 'event-show', params: {id : event.id} }"
     >  
         <div>
             <p>{{ event.date }} @ {{ event.time }} </p>
@@ -20,22 +20,8 @@
 
 <script>
     export default{
-        data(){
-            return{
-                event: {
-                    id: 1,
-                    title: 'Beach Cleanup',
-                    date: ' Tuesday Jan 2nd, 2019',
-                    location: ' The National Harbor',
-                    time: '6:00pm',
-                    attendees: [
-                        {id:'abc123', name:'Amirah Chamble'},
-                        {id:'abc124', name:'Kelly Green'},
-                        {id:'abc125', name:'Shamone Blythe'},
-                        {id:'abc126', name:'Mira Yoon'}
-                    ]
-                }
-            }
+        props: {
+            event: Object
         }
     };
 </script>
